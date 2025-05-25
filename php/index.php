@@ -170,7 +170,7 @@
   </section>
 
   <section class="products">
-    <h2>Customer Favourites</h2>
+    <h2>Products</h2>
     <div class="grid">
       <?php
         
