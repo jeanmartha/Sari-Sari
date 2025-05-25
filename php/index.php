@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Little Red Hen Bakery</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Open+Sans&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      background: #121212 url('images/dark-texture.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    .logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 24px;
+      letter-spacing: 2px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 60px 40px;
+      flex-wrap: wrap;
+    }
+
+    .hero-text h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 36px;
+      color: #fff;
+    }
+
+    .hero-text p {
+      max-width: 400px;
+    }
+
+    .hero-text button {
+      margin-top: 20px;
+      background-color: #d2691e;
+      border: none;
+      padding: 12px 24px;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 8px;
+    }
+
+    .hero-image img {
+      width: 300px;
+      border-radius: 50%;
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
+    }
+
+    .hero-image .price {
+      display: block;
+      text-align: center;
+      margin-top: 10px;
+      font-size: 18px;
+      color: #f4a261;
+    }
+
+    .products {
+      padding: 60px 40px;
+    }
+
+    .products h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 28px;
+      color: #f4a261;
+      margin-bottom: 40px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 30px;
+    }
+
+    .card {
+      background-color: #1e1e1e;
+      border-radius: 12px;
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.3s ease;
+      box-shadow: 0 0 20px rgba(0,0,0,0.4);
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+
+    .card h3 {
+      margin: 10px 0 5px;
+      font-family: 'Playfair Display', serif;
+    }
+
+    .card p {
+      color: #ccc;
+    }
+
+    .card button {
+      background-color: #f4a261;
+      border: none;
+      padding: 10px 20px;
+      color: #000;
+      font-weight: bold;
+      border-radius: 6px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">LITTLE RED HEN</div>
+    <nav>
+      <ul>
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Delivery</a></li>
+        <li><a href="#">Locations</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Traditional Artisan Bakery</h1>
+      <p>Dedicated to producing bread using traditional baking techniques and organic ingredients.</p>
+      <button>Shop Now</button>
+    </div>
+    <div class="hero-image">
+      <img src="images/country-sourdough.png" alt="Country Sourdough" />
+      <span class="price">$5.00</span>
+    </div>
+  </section>
+
+  <section class="products">
+    <h2>Customer Favourites</h2>
+    <div class="grid">
+      <?php
+        // Example product list
+        $products = [
+          ['img' => 'bread1.jpg', 'name' => 'Whole Grain Spelt', 'price' => '6.00', 'weight' => '390g'],
+          ['img' => 'bread2.jpg', 'name' => 'Mt. Ida Multigrain', 'price' => '6.00', 'weight' => '300g'],
+          ['img' => 'bread3.jpg', 'name' => 'Four Seed Whole Wheat', 'price' => '5.00', 'weight' => '420g'],
+          ['img' => 'bread4.jpg', 'name' => 'Bagel Multigrain', 'price' => '3.00', 'weight' => '100g'],
+          ['img' => 'bread5.jpg', 'name' => 'Puff Pastry', 'price' => '6.00', 'weight' => '130g'],
+          ['img' => 'bread6.jpg', 'name' => 'French Baguette', 'price' => '6.00', 'weight' => '280g']
+        ];
+
+        foreach ($products as $product) {
+          echo '
+          <div class="card">
+            <img src="images/' . $product['img'] . '" alt="' . $product['name'] . '" />
+            <h3>' . $product['name'] . '</h3>
+            <p>$' . $product['price'] . ' • ' . $product['weight'] . '</p>
+            <button>Add</button>
+          </div>
+          ';
+        }
+      ?>
+    </div>
+  </section>
+
+</body>
+</html>
