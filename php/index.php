@@ -12,7 +12,7 @@
     body {
       margin: 0;
       font-family: 'Open Sans', sans-serif;
-      background: #292c36 url('images/dark-texture.jpg') no-repeat center center fixed;
+      background: #292c36 no-repeat center center fixed;
       background-size: cover;
       color: #fff;
     }
