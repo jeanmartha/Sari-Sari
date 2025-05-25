@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Little Red Hen Bakery</title>
 
-  <!-- Google Fonts -->
+
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Open+Sans&display=swap" rel="stylesheet">
 
   <style>
@@ -173,7 +173,7 @@
     <h2>Customer Favourites</h2>
     <div class="grid">
       <?php
-        // Example product list
+        
         $products = [
           ['img' => 'k.jpeg', 'name' => 'Da wOrl sHall Kno3 PeyN car', 'price' => '010', 'weight' => '390g'],
           ['img' => 'eh.jpeg', 'name' => 'Pain car', 'price' => '010', 'weight' => '300g'],
