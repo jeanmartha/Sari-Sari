@@ -179,7 +179,7 @@
           ['img' => 'eh.jpeg', 'name' => 'Pain car', 'price' => '010', 'weight' => '300g'],
           ['img' => 'uh.jpeg', 'name' => 'Uhm car', 'price' => '010', 'weight' => '420g'],
           ['img' => 'no.jpeg', 'name' => 'Sad car', 'price' => '010', 'weight' => '100g'],
-          ['img' => 'd.jpeg', 'name' => 'Fluffy car', 'price' => '010', 'weight' => '130g'],
+          ['img' => 'd.jpeg', 'name' => 'Fluffy car', 'price' => '010', 'weight' => '1300g'],
           
         ];
 
