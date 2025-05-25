@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Little Red Hen Bakery</title>
+  <title>Sari-Sari Store</title>
 
 
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Open+Sans&display=swap" rel="stylesheet">
@@ -12,7 +12,7 @@
     body {
       margin: 0;
       font-family: 'Open Sans', sans-serif;
-      background: #121212 url('images/dark-texture.jpg') no-repeat center center fixed;
+      background: #292c36 url('images/dark-texture.jpg') no-repeat center center fixed;
       background-size: cover;
       color: #fff;
     }
@@ -22,7 +22,7 @@
       justify-content: space-between;
       align-items: center;
       padding: 20px 40px;
-      background-color: rgba(0, 0, 0, 0.8);
+      background-color: #8e99ac;
     }
 
     .logo {
@@ -63,7 +63,7 @@
 
     .hero-text button {
       margin-top: 20px;
-      background-color: #d2691e;
+      background-color: #a1a7af;
       border: none;
       padding: 12px 24px;
       color: white;
@@ -83,7 +83,7 @@
       text-align: center;
       margin-top: 10px;
       font-size: 18px;
-      color: #f4a261;
+      color: #fff;
     }
 
     .products {
@@ -93,7 +93,7 @@
     .products h2 {
       font-family: 'Playfair Display', serif;
       font-size: 28px;
-      color: #f4a261;
+      color: #fff;
       margin-bottom: 40px;
     }
 
@@ -132,7 +132,7 @@
     }
 
     .card button {
-      background-color: #f4a261;
+      background-color: #a1a7af;
       border: none;
       padding: 10px 20px;
       color: #000;
