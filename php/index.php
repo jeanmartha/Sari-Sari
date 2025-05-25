@@ -146,7 +146,7 @@
 <body>
 
   <header>
-    <div class="logo">LITTLE RED HEN</div>
+    <div class="logo">Dattebayo</div>
     <nav>
       <ul>
         <li><a href="#">About us</a></li>
@@ -159,13 +159,13 @@
 
   <section class="hero">
     <div class="hero-text">
-      <h1>Traditional Artisan Bakery</h1>
-      <p>Dedicated to producing bread using traditional baking techniques and organic ingredients.</p>
+      <h1>Sari-Sari Store</h1>
+      <p>Dedicated to bringing you all(not all) your needs.</p>
       <button>Shop Now</button>
     </div>
     <div class="hero-image">
-      <img src="images/country-sourdough.png" alt="Country Sourdough" />
-      <span class="price">$5.00</span>
+      <img src="images/mlem.jpeg" alt="Begging on my knees" />
+      <span class="price">$010</span>
     </div>
   </section>
 
@@ -175,12 +175,12 @@
       <?php
         // Example product list
         $products = [
-          ['img' => 'bread1.jpg', 'name' => 'Whole Grain Spelt', 'price' => '6.00', 'weight' => '390g'],
-          ['img' => 'bread2.jpg', 'name' => 'Mt. Ida Multigrain', 'price' => '6.00', 'weight' => '300g'],
-          ['img' => 'bread3.jpg', 'name' => 'Four Seed Whole Wheat', 'price' => '5.00', 'weight' => '420g'],
-          ['img' => 'bread4.jpg', 'name' => 'Bagel Multigrain', 'price' => '3.00', 'weight' => '100g'],
-          ['img' => 'bread5.jpg', 'name' => 'Puff Pastry', 'price' => '6.00', 'weight' => '130g'],
-          ['img' => 'bread6.jpg', 'name' => 'French Baguette', 'price' => '6.00', 'weight' => '280g']
+          ['img' => 'k.jpeg', 'name' => 'Da wOrl sHall Kno3 PeyN car', 'price' => '010', 'weight' => '390g'],
+          ['img' => 'eh.jpeg', 'name' => 'Pain car', 'price' => '010', 'weight' => '300g'],
+          ['img' => 'uh.jpeg', 'name' => 'Uhm car', 'price' => '010', 'weight' => '420g'],
+          ['img' => 'no.jpeg', 'name' => 'Sad car', 'price' => '010', 'weight' => '100g'],
+          ['img' => 'd.jpeg', 'name' => 'Fluffy car', 'price' => '010', 'weight' => '130g'],
+          
         ];
 
         foreach ($products as $product) {
